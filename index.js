@@ -11,7 +11,6 @@ app.use(express.json())
 
 
 
-
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.9e7m0jr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const client = new MongoClient(uri, {
     serverApi: {
@@ -48,11 +47,6 @@ async function run() {
     }
 }
 run().catch(console.dir);
-
-
-
-
-
 
 
 
